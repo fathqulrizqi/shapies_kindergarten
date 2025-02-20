@@ -13,7 +13,7 @@ export default function ContactUs() {
     <section className="py-16 px-6 flex justify-center">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full">
         <h2 className="text-3xl font-bold text-center text-purple-700">Contact Us</h2>
-        <p className="text-gray-600 text-center mt-2">We'd love to hear from you! 😊</p>
+        <p className="text-gray-600 text-center mt-2">We would love to hear from you! 😊</p>
 
         {submitted ? (
           <ConfirmationMessage />
