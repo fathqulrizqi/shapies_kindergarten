@@ -3,7 +3,7 @@ export default function Profile() {
       <section className="py-16 px-6 dark:bg-gray-900">
         <div className="max-w-screen-lg mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-purple-700 dark:text-purple-400">
-            Welcome to Shapies Kindergarten!
+            Profile
           </h2>
           <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
             A place where learning meets fun! At Shapies Kindergarten, we nurture 

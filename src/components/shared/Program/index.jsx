@@ -31,7 +31,7 @@ export default function Programs() {
   ];
 
   return (
-    <section className="py-16 dark:bg-yellow-900">
+    <section className="py-16 px-12 dark:bg-yellow-900">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-pink-500 dark:text-pink-200 mb-10">
           Our Featured Programs

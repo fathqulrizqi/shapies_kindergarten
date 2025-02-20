@@ -4,7 +4,7 @@ export default function Hero() {
     return (
       <>
         <section className="dark:bg-gray-900">
-          <div className="grid max-w-screen-xl md:px-12 py-12 mx-auto xl:gap-0 lg:py-20 lg:grid-cols-12 items-center">
+          <div className="grid max-w-screen-xl cm:px-4 md:px-12 py-12 mx-auto xl:gap-0 lg:py-20 lg:grid-cols-12 items-center">
             <div className="mr-auto place-self-center lg:col-span-7 text-center lg:text-left">
                 
               <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none text-purple-700 md:text-5xl xl:text-6xl">
