@@ -10,8 +10,8 @@ export default function Home() {
             <Hero />
             <StatsSection />
             <FeaturedPrograms />
-            <VideoSection />
             <Quotes />
+            <VideoSection />
         </>
     )
 }

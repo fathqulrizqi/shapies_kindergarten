@@ -33,12 +33,12 @@ export default function Gallery() {
   };
 
   return (
-    <section className="py-16 px-6">
+    <section className="py-16 px-6 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-screen-lg mx-auto text-center">
-        <h2 className="text-4xl font-extrabold text-purple-700">
+        <h2 className="text-4xl font-extrabold text-purple-700 dark:text-purple-400">
           📸 Shapies Kindergarten Gallery
         </h2>
-        <p className="mt-4 text-lg text-gray-700">
+        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
           A glimpse of our fun-filled activities, creative learning, and joyful moments!
         </p>
 
@@ -56,26 +56,33 @@ export default function Gallery() {
       </div>
 
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <button
-            className="absolute top-5 right-5 text-white text-3xl"
-            onClick={closeModal}
-          >
-            &times;
-          </button>
-          <button
-            className="absolute left-5 text-white text-3xl"
-            onClick={prevImage}
-          >
-            &#9665;
-          </button>
-          <img src={selectedImage} className="max-w-full max-h-[80vh] rounded-lg" />
-          <button
-            className="absolute right-5 text-white text-3xl"
-            onClick={nextImage}
-          >
-            &#9655;
-          </button>
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex flex-col items-center justify-center z-50"
+          onClick={closeModal}
+        >
+          <div className="relative" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="absolute top-5 right-5 text-white text-3xl"
+              onClick={closeModal}
+            >
+              &times;
+            </button>
+            <img src={selectedImage} className="max-w-full max-h-[80vh] rounded-lg" />
+            <div className="flex justify-between mt-4">
+              <button
+                className="text-white text-3xl bg-gray-700 px-4 py-2 rounded-full hover:bg-gray-600 transition"
+                onClick={prevImage}
+              >
+                &#9665;
+              </button>
+              <button
+                className="text-white text-3xl bg-gray-700 px-4 py-2 rounded-full hover:bg-gray-600 transition"
+                onClick={nextImage}
+              >
+                &#9655;
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </section>

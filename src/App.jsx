@@ -16,10 +16,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/extracurricular" element={<Extracurricular />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/registration" element={<RegistrationForm />} />
-          <Route path="/extracurricular" element={<Extracurricular />} />
         </Route>
       </Routes>
     </BrowserRouter>
