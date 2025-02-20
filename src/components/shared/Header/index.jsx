@@ -51,11 +51,11 @@ export default function Header() {
           </Link>
 
           <ul className="hidden lg:flex space-x-8">
-            <li><Link to="/" className="text-gray-900 hover:text-indigo-700 dark:text-white">About Us</Link></li>
-            <li><Link to="/contacts" className="text-gray-900 hover:text-indigo-700 dark:text-white">Profile</Link></li>
-            <li><Link to="/movies" className="text-gray-900 hover:text-indigo-700 dark:text-white">Extracuriculler</Link></li>
-            <li><Link to="/teams" className="text-gray-900 hover:text-indigo-700 dark:text-white">Gallery</Link></li>
-            <li><Link to="/contacts" className="text-gray-900 hover:text-indigo-700 dark:text-white">Contact Us</Link></li>
+            <li><Link to="/about" className="text-gray-900 hover:text-purple-700 dark:text-white">About Us</Link></li>
+            <li><Link to="/profile" className="text-gray-900 hover:text-purple-700 dark:text-white">Profile</Link></li>
+            <li><Link to="/galleryy" className="text-gray-900 hover:text-purple-700 dark:text-white">Extracuriculler</Link></li>
+            <li><Link to="/gallery" className="text-gray-900 hover:text-purple-700 dark:text-white">Gallery</Link></li>
+            <li><Link to="/contact" className="text-gray-900 hover:text-purple-700 dark:text-white">Contact Us</Link></li>
           </ul>
 
           <button
@@ -75,10 +75,10 @@ export default function Header() {
         <div ref={mobileMenuRef} className={`fixed top-0 right-0 w-2/4 h-screen bg-white dark:bg-gray-800 p-5 transform transition-transform duration-300 ease-in-out z-50 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"} lg:hidden`}>
           <button type="button" className="text-gray-500 dark:text-white self-end mb-5" onClick={toggleMobileMenu}>✕</button>
           <ul className="flex flex-col gap-4">
-            <li><Link to="/" className="text-gray-900 hover:text-indigo-700 dark:text-white">Home</Link></li>
-            <li><Link to="/movies" className="text-gray-900 hover:text-indigo-700 dark:text-white">Movies</Link></li>
-            <li><Link to="/teams" className="text-gray-900 hover:text-indigo-700 dark:text-white">Team</Link></li>
-            <li><Link to="/contacts" className="text-gray-900 hover:text-indigo-700 dark:text-white">Contact</Link></li>
+            <li><Link to="/" className="text-gray-900 hover:text-purple-700 dark:text-white">Home</Link></li>
+            <li><Link to="/movies" className="text-gray-900 hover:text-purple-700 dark:text-white">Movies</Link></li>
+            <li><Link to="/teams" className="text-gray-900 hover:text-purple-700 dark:text-white">Team</Link></li>
+            <li><Link to="/contacts" className="text-gray-900 hover:text-purple-700 dark:text-white">Contact</Link></li>
           </ul>
         </div>
       </nav>

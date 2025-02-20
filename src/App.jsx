@@ -1,6 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import PublicLayout from "./layout/public"
 import Home from "./pages/public"
+import AboutUs from "./pages/public/about"
+import Profile from "./pages/public/profile"
+import Gallery from "./pages/public/gallery"
+import ContactUs from "./pages/public/contact"
 
 function App() {
   return (
@@ -8,6 +12,10 @@ function App() {
       <Routes>
         <Route element={<PublicLayout />}>
           <Route index element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Route>
       </Routes>
     </BrowserRouter>
