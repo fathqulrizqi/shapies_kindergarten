@@ -5,7 +5,6 @@ export default function Statistic() {
     <div className="w-full dark:bg-gray-900 py-16">
       <div className="max-w-5xl mx-auto px-6 text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Kids Graduated */}
           <div className="bg-purple-100 dark:bg-purple-900 p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold text-purple-700 dark:text-purple-300">
               Kids Graduated
@@ -18,7 +17,6 @@ export default function Statistic() {
             </div>
           </div>
 
-          {/* Total Enrollments */}
           <div className="bg-yellow-100 dark:bg-yellow-900 p-8 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold text-yellow-700 dark:text-yellow-300">
               Total Enrollments
