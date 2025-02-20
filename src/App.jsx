@@ -6,6 +6,7 @@ import Profile from "./pages/public/profile"
 import Gallery from "./pages/public/gallery"
 import ContactUs from "./pages/public/contact"
 import RegistrationForm from "./pages/public/registration"
+import Extracurricular from "./pages/public/extracurricular"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/registration" element={<RegistrationForm />} />
+          <Route path="/extracurricular" element={<Extracurricular />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -53,6 +53,7 @@ export default function Header() {
           <ul className="hidden lg:flex space-x-8">
             <li><Link to="/about" className="text-gray-900 hover:text-purple-700 dark:text-white">About Us</Link></li>
             <li><Link to="/profile" className="text-gray-900 hover:text-purple-700 dark:text-white">Profile</Link></li>
+            <li><Link to="/extracurricular" className="text-gray-900 hover:text-purple-700 dark:text-white">Extracuricullar</Link></li>
             <li><Link to="/gallery" className="text-gray-900 hover:text-purple-700 dark:text-white">Gallery</Link></li>
             <li><Link to="/contact" className="text-gray-900 hover:text-purple-700 dark:text-white">Contact Us</Link></li>
           </ul>
