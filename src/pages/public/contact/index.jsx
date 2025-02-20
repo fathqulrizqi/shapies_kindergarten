@@ -10,7 +10,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="py-16 px-6 flex justify-center bg-gray-50 dark:bg-gray-900">
+    <section className="py-16 px-6 flex justify-center dark:bg-gray-900">
       <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 max-w-lg w-full">
         <h2 className="text-3xl font-bold text-center text-purple-700 dark:text-purple-400">
           Contact Us

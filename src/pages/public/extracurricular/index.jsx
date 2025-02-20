@@ -25,7 +25,7 @@ const activities = [
 
 export default function Extracurricular() {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-extrabold text-purple-700 dark:text-purple-400 mb-8">Extracurricular</h2>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-12">

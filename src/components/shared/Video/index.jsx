@@ -1,4 +1,4 @@
-export default function VideoSection() {
+export default function Video() {
     return (
       <section className="bg-white dark:bg-gray-900 py-16 px-6">
         <div className="max-w-screen-lg mx-auto text-center">

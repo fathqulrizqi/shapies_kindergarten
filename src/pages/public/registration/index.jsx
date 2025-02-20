@@ -14,7 +14,7 @@ export default function RegistrationForm() {
   }
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen flex justify-center items-center dark:bg-gray-900">
       <div className="max-w-lg w-full p-8 bg-white dark:bg-gray-800 shadow-md rounded-lg">
         <h2 className="text-2xl font-bold text-center text-gray-700 dark:text-gray-200 mb-6">
           School Registration

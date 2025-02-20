@@ -1,6 +1,6 @@
 export default function Profile() {
     return (
-      <section className="py-16 px-6 bg-gray-100 dark:bg-gray-900">
+      <section className="py-16 px-6 dark:bg-gray-900">
         <div className="max-w-screen-lg mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-purple-700 dark:text-purple-400">
             Welcome to Shapies Kindergarten!

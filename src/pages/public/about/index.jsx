@@ -1,6 +1,6 @@
 export default function AboutUs() {
     return (
-      <section className="py-16 px-6 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <section className="py-16 px-6 dark:bg-gray-900 transition-colors duration-300">
         <div className="max-w-screen-xl mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-purple-700 dark:text-purple-400">
             About Us

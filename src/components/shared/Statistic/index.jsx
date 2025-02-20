@@ -1,8 +1,8 @@
 import CountUp from "../../ui/Count";
 
-export default function StatsSection() {
+export default function Statistic() {
   return (
-    <div className="w-full bg-gray-100 dark:bg-gray-900 py-16">
+    <div className="w-full dark:bg-gray-900 py-16">
       <div className="max-w-5xl mx-auto px-6 text-center md:text-left">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Kids Graduated */}
