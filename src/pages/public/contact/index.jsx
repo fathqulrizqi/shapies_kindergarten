@@ -1,13 +1,5 @@
 import { useState } from "react";
-
-function ConfirmationMessage() {
-  return (
-    <div className="text-center py-10">
-      <h2 className="text-2xl font-bold text-green-600">Thanks for submitting!</h2>
-      <p className="text-gray-700">We will get back to you soon. 😊</p>
-    </div>
-  );
-}
+import ConfirmationMessage from "../../../components/ui/Confirmation";
 
 export default function ContactUs() {
   const [submitted, setSubmitted] = useState(false);
@@ -18,7 +10,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="bg-gray-100 py-16 px-6 flex justify-center">
+    <section className="py-16 px-6 flex justify-center">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full">
         <h2 className="text-3xl font-bold text-center text-purple-700">Contact Us</h2>
         <p className="text-gray-600 text-center mt-2">We'd love to hear from you! 😊</p>

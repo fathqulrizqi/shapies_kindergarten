@@ -5,6 +5,7 @@ import AboutUs from "./pages/public/about"
 import Profile from "./pages/public/profile"
 import Gallery from "./pages/public/gallery"
 import ContactUs from "./pages/public/contact"
+import RegistrationForm from "./pages/public/registration"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/registration" element={<RegistrationForm />} />
         </Route>
       </Routes>
     </BrowserRouter>

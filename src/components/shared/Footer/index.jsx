@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const [theme, setTheme] = useState("light");
@@ -16,54 +17,53 @@ export default function Footer() {
   return (
     <footer className="text-gray-600 body-font dark:bg-gray-900">
   <div className="container px-5 py-10 mx-auto flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-between">
-    
-    {/* LOGO */}
     <div className="w-64 flex-shrink-0 text-center sm:text-left">
       <a className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start text-gray-900">
         <img
           src={theme === "dark" ? "/public/image/logo.png" : "/public/image/logo.png"}
           className="rounded-full mb-2 sm:mb-0 sm:mr-3 h-12 sm:h-9"
-          alt="Dream Cine Studios"
+          alt="Shapies Kindergarten"
         />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-xl">
-          {/* Dream-Cine Studios */}
         </span>
       </a>
       <p className="mt-2 text-sm text-gray-500">
-        Experience the best cinematic journey, anytime, anywhere
-        Your go-to online movie ticket booking platform
+        Experience the best learning journey, anytime, anywhere
+        Your go-to kindergarten for fun and education
       </p>
     </div>
 
-    {/* NAVIGATION LINKS */}
     <div className="flex flex-col sm:flex-row justify-center items-center sm:justify-between sm:items-start mt-6 sm:mt-0 space-y-3 sm:space-y-0 sm:space-x-8">
-      <a href="/movies">
+      <Link to="/about">
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm text-center sm:text-left dark:text-gray-400 hover:scale-110">
-          MOVIES
+          About Us
         </h2>
-      </a>
-      <a href="/teams">
+      </Link>
+      <Link to="/profile">
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm text-center sm:text-left dark:text-gray-400 hover:scale-110">
-          TEAM
+          Profile
         </h2>
-      </a>
-      <a href="/contacts">
+      </Link>
+      <Link to="/gallery">
         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm text-center sm:text-left dark:text-gray-400 hover:scale-110">
-          CONTACT US
+          Gallery
         </h2>
-      </a>
+      </Link>
+      <Link to="/contact">
+        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm text-center sm:text-left dark:text-gray-400 hover:scale-110">
+          Contact Us
+        </h2>
+      </Link>
     </div>
     
   </div>
-  <div className="bg-gray-800 dark:bg-black">
+  <div className="bg-gray-600 dark:bg-black">
   <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row items-center justify-between">
     
-    {/* COPYRIGHT TEXT */}
     <p className="text-gray-300 text-sm text-center sm:text-left">
-      © 2025 DreamCine - All Rights Reserved
+      © 2025 Shapies Kindergarten - All Rights Reserved
     </p>
 
-    {/* SOCIAL MEDIA ICONS */}
     <div className="flex mt-2 sm:mt-0 space-x-4">
       <a href="https://facebook.com" title="Facebook" target="_blank" className="text-gray-300 hover:text-blue-500">
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

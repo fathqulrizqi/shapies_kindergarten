@@ -33,7 +33,7 @@ export default function Gallery() {
   };
 
   return (
-    <section className="bg-yellow-50 py-16 px-6">
+    <section className="py-16 px-6">
       <div className="max-w-screen-lg mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-purple-700">
           📸 Shapies Kindergarten Gallery
