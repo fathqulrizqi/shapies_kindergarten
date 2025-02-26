@@ -21,8 +21,9 @@ export default function RegistrationForm() {
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-gray-600 dark:text-gray-300">Full Name</label>
+            <label htmlFor="full-name" className="block text-gray-600 dark:text-gray-300">Full Name</label>
             <input
+              id="full-name"
               type="text"
               name="full-name"
               required
@@ -30,8 +31,9 @@ export default function RegistrationForm() {
             />
           </div>
           <div>
-            <label className="block text-gray-600 dark:text-gray-300">Email</label>
+            <label htmlFor="email" className="block text-gray-600 dark:text-gray-300">Email</label>
             <input
+              id="email"
               type="email"
               name="email"
               required
@@ -39,8 +41,9 @@ export default function RegistrationForm() {
             />
           </div>
           <div>
-            <label className="block text-gray-600 dark:text-gray-300">Phone Number</label>
+            <label htmlFor="phone" className="block text-gray-600 dark:text-gray-300">Phone Number</label>
             <input
+              id="phone"
               type="tel"
               name="phone"
               required
@@ -48,8 +51,9 @@ export default function RegistrationForm() {
             />
           </div>
           <div>
-            <label className="block text-gray-600 dark:text-gray-300">Date of Birth</label>
+            <label htmlFor="dob" className="block text-gray-600 dark:text-gray-300">Date of Birth</label>
             <input
+              id="dob"
               type="date"
               name="dob"
               required
@@ -57,8 +61,9 @@ export default function RegistrationForm() {
             />
           </div>
           <div>
-            <label className="block text-gray-600 dark:text-gray-300">Select Grade</label>
+            <label htmlFor="grade" className="block text-gray-600 dark:text-gray-300">Select Grade</label>
             <select
+              id="grade"
               name="grade"
               required
               className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"

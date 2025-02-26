@@ -2,7 +2,6 @@ import { useState } from "react";
 import { images } from "../../../utils/constants/gallery";
 
 export default function Gallery() {
-  
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -32,12 +31,17 @@ export default function Gallery() {
           📸 Shapies Kindergarten Gallery
         </h2>
         <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
-          A glimpse of our fun-filled activities, creative learning, and joyful moments!
+          A glimpse of our fun-filled activities, creative learning, and joyful
+          moments!
         </p>
 
         <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, index) => (
-            <div key={index} className="relative group" onClick={() => openModal(index)}>
+            <div
+              key={index}
+              className="relative group"
+              onClick={() => openModal(index)}
+            >
               <img
                 src={src}
                 alt={`Gallery ${index + 1}`}
@@ -50,9 +54,10 @@ export default function Gallery() {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex flex-col items-center justify-center z-50"
-          onClick={closeModal}
-        >
+        data-testid="modal"
+        className="fixed inset-0 bg-black bg-opacity-75 flex flex-col items-center justify-center z-50"
+        onClick={closeModal}
+      >
           <div className="relative" onClick={(e) => e.stopPropagation()}>
             <button
               className="absolute top-5 right-5 text-white text-3xl"
@@ -60,17 +65,25 @@ export default function Gallery() {
             >
               &times;
             </button>
-            <img src={selectedImage} className="max-w-full max-h-[80vh] rounded-lg" />
+            <img
+              src={selectedImage}
+              alt="Selected gallery image"
+              data-testid="modal-image"
+              className="max-w-full max-h-[80vh] rounded-lg"
+            />
+
             <div className="flex justify-between mt-4">
               <button
                 className="text-white text-3xl bg-gray-700 px-4 py-2 rounded-full hover:bg-gray-600 transition"
                 onClick={prevImage}
+                aria-label="Previous Image"
               >
                 &#9665;
               </button>
               <button
                 className="text-white text-3xl bg-gray-700 px-4 py-2 rounded-full hover:bg-gray-600 transition"
                 onClick={nextImage}
+                aria-label="Next Image"
               >
                 &#9655;
               </button>

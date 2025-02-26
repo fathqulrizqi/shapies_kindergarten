@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import PublicLayout from "./layout/public"
 import Home from "./pages/public"
 import AboutUs from "./pages/public/about"
@@ -10,7 +10,6 @@ import Extracurricular from "./pages/public/extracurricular"
 
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route element={<PublicLayout />}>
           <Route index element={<Home />} />
@@ -22,7 +21,6 @@ function App() {
           <Route path="/registration" element={<RegistrationForm />} />
         </Route>
       </Routes>
-    </BrowserRouter>
   )
 }
 

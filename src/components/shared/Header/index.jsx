@@ -61,7 +61,7 @@ export default function Header() {
 
         {isMobileMenuOpen && <div className="fixed inset-0 bg-black opacity-50 z-40" onClick={toggleMobileMenu}></div>}
 
-        <div ref={mobileMenuRef} className={`fixed top-0 right-0 w-2/4 h-screen bg-white dark:bg-gray-800 p-5 transform transition-transform duration-300 ease-in-out z-50 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"} lg:hidden`}>
+        <div ref={mobileMenuRef} data-testid="mobile-menu" className={`fixed top-0 right-0 w-2/4 h-screen bg-white dark:bg-gray-800 p-5 transform transition-transform duration-300 ease-in-out z-50 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"} lg:hidden`}>
           <button type="button" className="text-gray-500 dark:text-white self-end mb-5" onClick={toggleMobileMenu}>✕</button>
           <ul className="flex flex-col gap-4">
             <li><Link to="/about" className="text-gray-900 hover:text-purple-700 dark:text-white" onClick={toggleMobileMenu}>About Us</Link></li>
